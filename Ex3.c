@@ -52,7 +52,7 @@ int gematria()
 char *atbash()
 {
     int i = 0;
-    char *newWord = malloc(sizeof(char) * WORD);
+    char *newWord = (char*)malloc(sizeof(char) * WORD);
     while (word[i] != '\0' || i <= WORD)
     {
         if (word[i] >= 'a' && word[i] <= 'm')
@@ -82,7 +82,7 @@ char *atbash()
 }
 char *revers(char *currWord)
 {
-    char *newWord = malloc(sizeof(char) * WORD);
+    char *newWord = (char*)malloc(sizeof(char) * WORD);
     int end = 0;
     while (currWord[end] != '\0')
     {
