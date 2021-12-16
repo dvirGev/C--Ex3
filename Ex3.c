@@ -227,6 +227,8 @@ void atbashSequences()
         }
         ++i;
     }
+    free(atbashWord);
+    free(reversAtbash);
 }
 // C
 void anagramSequences()
